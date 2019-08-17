@@ -1,0 +1,34 @@
+
+.buttonRuby {
+    background: url('/images/ruby.png');
+    height: 40px;
+    width: 40px
+}
+
+.buttonDiamond {
+    background: url('/images/diamond.png');
+    height: 40px;
+    width: 40px
+}
+
+.buttonSaphire {
+    background: url('/images/saphire.png');
+    height: 40px;
+    width: 40px
+}
+
+.buttonEmerald {
+    background: url('/images/emerald.png');
+    height: 40px;
+    width: 40px
+}
+
+#gamenum {
+    font-size: 36;
+    color: black;  
+}
+
+#btn2 {
+    font-size: 36;
+    color: black;  
+}

@@ -2,12 +2,140 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>
-      Data Types, User Input, Conditional Logic
-    </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <a href ="assets/css/style.css"></a>
+
+    <!--<a href = "assets/javascript/game.js"></a>-->
+
+    <title>Smegol's Barter</title>
+    
   </head>
   <body>
+    <div class="game">
+
+      <h1>Smegol's Barter</h1>
+
+      <!--Instructions-->
+      <h2>Pay Smegol and get your wish</h2>
+      <p>You want to buy a wish from Smegol, the dragon who lives in your parking garage.</p>
+      <p>You have a bag of jewels with which to pay but aren't sure what each jewel type is worth.</p>
+      <p>Click the jewel buttons below to begin paying; get Smegol's price down to exactly zero to get your wish.</p>
+      <br>
+      <h3>TO PLAY</h3>
+      <ol>
+        <li>Select <strong>Start</strong> to begin.</li>
+        <li>Smegol displays the price for the wish.</li>
+        <li>Select the jewel buttons to begin paying but do so with caution!
+          <ul>
+            <li>Pay too little and Smegol won't grant you a wish. Keep selecting jewels to pay!</li>
+            <li>Pay too much and Smegol will find you foolish; he may eat a finger or a toe.</li>
+          </ul>
+          <p>Pay the exact amount and get your wish! </p>
+        </li>
+      </ol>
+
+      <!--START AND RESET GAME BUTTONS-->
+      <input type="button" class="btn" value="Start" onclick="start()" />
+      <input type="button" class="btn" value="Reset" onclick="reset()" />
+      </div>
+
+
+      <!--GAME NUMBER-->
+      <div id="gameNumber">
+        <H4>Smegol's price is  </H4>
+      </div>
+
+      <!--WHAT YOU'VE PAID
+      <div id="paidNumber">
+          <H4>You've paid  </H4>
+        </div>-->
+      
+
+    <!--JEWEL BUTTONS-->
+      <div id="btnRuby">
+        <!--button class="btnRuby"></button-->
+          
+        <input type="button" class="btnRuby" value="RUBY" onclick="rubyValue()" />
+      </div>
+      <div id="btnEmerald">
+          <button class="btnEmerald"></button>
+        <!--input type="button" class="btnEmerald" value="Emerald" onclick="rubyValue()" />-->
+      </div>
+      <div id="btnDiamond">
+          <button class="btnDiamond"></button>
+          <!--input type="button" class="btnDiamond" value="Diamond" onclick="rubyValue()" />-->
+      </div>
+      <div id="btnSaphire">
+          <button class="btnSaphire"></button>
+          <!--input type="button" class="btnSaphire" value="Saphire" onclick="rubyValue()" />-->
+      </div>
+  
+  
+    
     <script type="text/javascript">
+
+        var game
+
+        var maxNumber = 120;
+        var minNumber = 19;
+
+        gameNumber = Math.floor((Math.random() * maxNumber) + minNumber);
+
+        //Use jQuery to print the random number
+        $("h4").append(this.gameNumber);
+
+      
+
+        //*********JEWELS *******************
+
+        // Create variables for each jewel type
+        var ruby
+        var diamond
+        var emerald
+        var saphire
+
+        //Randomly generate a number for each jewel between 1 and 12
+        var maxGem = 12;
+        var minGem = 1;
+
+        rubyValue = Math.floor((Math.random() * maxGem) + minGem);
+        diamondValue = Math.floor((Math.random() * maxGem) + minGem);
+        emeraldValue = Math.floor((Math.random() * maxGem) + minGem);
+        saphireValue = Math.floor((Math.random() * maxGem) + minGem);
+
+        //console.log(diamondValue, emeraldValue, rubyValue, saphireValue);
+
+        $(function() {
+
+          $("btnRuby").button({
+            icons: {
+              primary: "ruby.png"
+            },
+            text: false
+
+          });
+          
+        
+       // $("#btnRuby").append ("ruby.png");
+        //$("#btnDiamond").append ("diamond.png");
+        //$("#btnEmerald").append ("emerald.png");
+       // $("#btnSaphire").append ("saphire.png");
+
+
+        });
+
+
+        
+
+
+
+
+
+
+    
+
 
       
     </script>
