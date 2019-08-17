@@ -1,37 +1,108 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
+<html>
+<head>
+	<title>Smegol's Barter</title>
 
-    <a href = "assets/css/style.css"></a>
-    <a href = "assets/javascript/game.js"></a>
+	<!-- reset.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
-    <title>Smeg's Barter</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <div id ="gamenum"></div>
-  </head>
-  <body>
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Ek+Mukta" rel="stylesheet">
 
-    <h1>Smeg's Barter</h1>
-    <p>You want to buy a wish from Smeg, the dragon that lives in your parking garage.</p>
-    <p>Smeg will tell you exactly how much your wish will cost.</p>
-    <p>Luckily, you have a bag of jewels with which to pay but are unsure how much each type of jewel is worth.</p>
-    <p>Unfortunately, Smeg is an exacting creature.</p>
-    <ul>
-      <li>Pay too little and Smeg won't sell you a wish.</li>
-      <li>Pay too much and you'll offend Smeg; he may eat a finger or a toe.</li>
-    </ul>
-    <p></p>
-    <p></p>
-    <p>Click the jewels to begin paying; match Smeg's price exactly and you'll get your wish! Take great care not to overpay.</p>
-    
-  
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <!-- JQuery -->
+  	<script src="https://code.jquery.com/jquery.js"></script>
 
-    <div id ="btn2"></div>
+</head>
+<body>
 
-    <script type="text/javascript">
+	<!-- main container -->
+	<div class="container-fluid" id="mainBox">
 
-      
-    </script>
-  </body>
+		<!-- Instructions -->
+		<div class="jumbotron" style="background-image: 100%">
+			<h1 class="text-center">Smegol's Barter</h1>
+			<h2>PAY SMEGOL TO GET YOUR WISH!</h2>
+      		<p>You want to buy a wish from Smegol, the dragon who lives in your parking garage.</p>
+      		<p>You have a bag of jewels with which to pay but aren't sure what each jewel type is worth.</p>
+      		<p>Click the jewel buttons below to begin paying; match Smegol's price exactly and get your wish!</p>
+      		<br>
+      		<h3>TO PLAY</h3>
+      		<ol>
+        		<li>Smegol displays the price for the wish.</li>
+        		<li>Select the jewel buttons to begin paying but do so with <strong>caution!</strong>
+          			<ul>
+            			<li>Pay <strong>too little</strong> and Smegol won't grant you a wish. Keep selecting jewels to pay!</li>
+            			<li>Pay <strong>too much</strong> and Smegol will find you foolish; he may eat a finger or toe.</li>
+          			</ul>
+          			<p><strong>Pay the exact amount and get your wish! </strong></p>
+        		</li>
+      		</ol>
+		</div>
+
+		<!-- game section -->
+		<div class="row" id="gameSection">
+
+			<!-- first column for Smegol's Price -->
+			<div class="col-md-3" id="numberSection">
+				<h3 class="text-center" id="random">SMEGOL'S PRICE:</h3>
+				<h2 class="numberBox text-center" id="randomNumber" style="color:black">120</h2>
+			</div>
+
+			<!-- second column for buttons -->
+			<div class="col-md-6 text-center" id="buttonSection">
+
+				<!-- first gem -->
+				<button id="button-1" value="0"><img src="assets/images/ruby.png" class="img-responsive icons" id="icon1"></button>
+
+				<!-- second gem -->
+				<button id="button-2" value="0"><img src="assets/images/diamond.png" class="img-responsive icons" id="icon2"></button>
+
+				<!-- third gem -->
+				<button id="button-3" value="0"><img src="assets/images/emerald.png" class="img-responsive icons" id="icon3"></button>
+
+				<!-- fourth gem -->
+				<button id="button-4" value="0"><img src="assets/images/saphire.png" class="img-responsive icons" id="icon4"></button>
+
+			</div>
+
+			<!-- Price Paid display -->
+			<div class="col-md-3" id="totalPoints">
+				<h3 class="text-center" id="score">What You've Paid:</h3>
+				<h2 class="numberBox text-center" id="totalNumber" style="color:black">0</h2>
+			</div>
+
+		</div>
+
+		<!-- Scoring block -->
+		<div class="row" id="scoreSection">
+
+			
+			<div class="col-md-4"></div>
+
+			<!-- wins column -->
+			<div class="col-md-2" id="winSection">
+				<h3 class="text-center" id="wins">Wins:	0</h3>
+			</div>
+
+			<!-- losses column -->
+			<div class="col-md-2" id="lossSection">
+				<h3 class="text-center" id="losses">Losses: 0</h3>
+			</div>
+
+			
+			<div class="col-md-4"></div>
+
+		</div>
+
+	</div>
+
+</body>
+
+<script src="assets/javascript/game.js"></script>
+
 </html>

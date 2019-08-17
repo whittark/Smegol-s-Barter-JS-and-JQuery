@@ -1,34 +1,545 @@
 
-.buttonRuby {
-    background: url('/images/ruby.png');
-    height: 40px;
-    width: 40px
+/* Backgrounds */
+body {
+	background-image: url("../images/smegol.PNG");
+	background-repeat: no-repeat;
+	background-color: black;
 }
 
-.buttonDiamond {
-    background: url('/images/diamond.png');
-    height: 40px;
-    width: 40px
+.jumbotron {
+	width: 100%;
+	margin-top: 70%;
+	background: rgba (76, 175, 80, 0.1);
+	border-radius: 0, 0, 0, 0;
+	border-left: 0%;
+	border-right: 0%;
+
 }
 
-.buttonSaphire {
-    background: url('/images/saphire.png');
-    height: 40px;
-    width: 40px
+.jumbotron p {
+	font-size: 17px;
+
 }
 
-.buttonEmerald {
-    background: url('/images/emerald.png');
-    height: 40px;
-    width: 40px
+#gameSection, #scoreSection {
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#gamenum {
-    font-size: 36;
-    color: black;  
+/*FOR TESTING*/
+/*#numberSection, #totalPoints {
+
+	background-color: orange;
+}*/
+
+#buttonSection {
+	padding: 0px;
+	padding-top: 50px;
+	padding-bottom: 25px;
+	opacity: 0.70;
 }
 
-#btn2 {
-    font-size: 36;
-    color: black;  
+/* Fonts */
+h1 {
+	font-family: 'Helvetica';
+	font-size: 15px;
+	color: rgb(24, 23, 23);
+	
+}
+
+h2, h3 {
+	font-family: 'Helvetica';
+}
+
+p {
+	font-family: 'Helvetica';
+}
+
+.numberBox {
+	font-size: 100px;
+	margin: 0px;
+}
+
+/* images for buttons */
+.icons {
+	display: inline-block;
+  	max-width: 100px;
+  	max-height: 100px;
+  	width: auto;
+  	height: auto;
+  	margin:10px;
+}
+
+@media screen and (max-width: 1600px) {
+	.jumbotron {
+		width: 100%;
+		margin-top: 35%;
+		opacity: 0.30;
+		border-radius: 0, 0, 0, 0;
+		border-left: 0%;
+		border-right: 0%;
+	}
+	.jumbotron h1 {
+		font-family: 'Helvetica';
+		font-size: 38px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+	}
+
+	h1 {
+		font-family: 'Helvetica';
+		font-size: 22px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+		
+	}
+	
+	h2 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+
+	h3 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+	
+	p {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+		font-weight: bolder;
+		
+	}
+
+	li {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+	}
+	.jumbotron p {
+		font-size: 17px;
+	
+	}
+	.numberBox {
+		font-size: 50px;
+		margin: 0px;
+	}
+
+	#gameSection {
+		opacity: 0.70;
+	}
+
+	#scoreSection {
+		opacity: 0.70;
+	}
+
+	#buttonSection {
+		padding: 0px;
+		padding-top: 50px;
+		padding-bottom: 25px;
+		opacity: 0.70;
+	}
+
+}
+
+@media screen and (max-width: 1500px) {
+	.jumbotron {
+		width: 100%;
+		margin-top: 35%;
+		opacity: 0.30;
+		border-radius: 0, 0, 0, 0;
+		border-left: 0%;
+		border-right: 0%;
+	}
+	.jumbotron h1 {
+		font-family: 'Helvetica';
+		font-size: 38px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+	}
+
+	h1 {
+		font-family: 'Helvetica';
+		font-size: 22px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+		
+	}
+	
+	h2 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+
+	h3 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+	
+	p {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+		font-weight: bolder;
+		
+	}
+
+	li {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+	}
+	.jumbotron p {
+		font-size: 17px;
+	
+	}
+	.numberBox {
+		font-size: 50px;
+		margin: 0px;
+	}
+
+	#gameSection {
+		opacity: 0.70;
+	}
+
+	#scoreSection {
+		opacity: 0.70;
+	}
+
+	#buttonSection {
+		padding: 0px;
+		padding-top: 50px;
+		padding-bottom: 25px;
+		opacity: 0.70;
+	}
+
+}
+
+@media screen and (max-width: 1400px) {
+	.jumbotron {
+		width: 100%;
+		margin-top: 35%;
+		opacity: 0.30;
+		border-radius: 0, 0, 0, 0;
+		border-left: 0%;
+		border-right: 0%;
+	}
+	.jumbotron h1 {
+		font-family: 'Helvetica';
+		font-size: 38px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+	}
+
+	h1 {
+		font-family: 'Helvetica';
+		font-size: 22px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+		
+	}
+	
+	h2 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+
+	h3 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+	
+	p {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+		font-weight: bolder;
+		
+	}
+
+	li {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+	}
+	.jumbotron p {
+		font-size: 17px;
+	
+	}
+	.numberBox {
+		font-size: 50px;
+		margin: 0px;
+	}
+
+	#gameSection {
+		opacity: 0.70;
+	}
+
+	#scoreSection {
+		opacity: 0.70;
+	}
+
+	#buttonSection {
+		padding: 0px;
+		padding-top: 50px;
+		padding-bottom: 25px;
+		opacity: 0.70;
+	}
+
+}
+
+
+@media screen and (max-width: 1200px) {
+	.jumbotron {
+		width: 100%;
+		margin-top: 45%;
+		opacity: 0.30;
+		border-radius: 0, 0, 0, 0;
+		border-left: 0%;
+		border-right: 0%;
+	}
+	.jumbotron h1 {
+		font-family: 'Helvetica';
+		font-size: 38px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+	}
+
+	h1 {
+		font-family: 'Helvetica';
+		font-size: 22px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+		
+	}
+	
+	h2 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+
+	h3 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+	
+	p {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+		font-weight: bolder;
+		
+	}
+
+	li {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+	}
+	.jumbotron p {
+		font-size: 17px;
+	
+	}
+	.numberBox {
+		font-size: 50px;
+		margin: 0px;
+	}
+
+	#gameSection {
+		opacity: 0.70;
+	}
+
+	#scoreSection {
+		opacity: 0.70;
+	}
+
+	#buttonSection {
+		padding: 0px;
+		padding-top: 50px;
+		padding-bottom: 25px;
+		opacity: 0.70;
+	}
+
+}
+
+
+
+@media screen and (max-width: 980px) {
+	.jumbotron {
+		width: 100%;
+		margin-top: 55%;
+		opacity: 0.30;
+		border-radius: 0, 0, 0, 0;
+		border-left: 0%;
+		border-right: 0%;
+	}
+
+	.jumbotron h1 {
+		font-family: 'Helvetica';
+		font-size: 38px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+	}
+
+	h1 {
+		font-family: 'Helvetica';
+		font-size: 22px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+		
+	}
+	
+	h2 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+
+	h3 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+	
+	p {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+		font-weight: bolder;
+		
+	}
+
+	li {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+	}
+	.jumbotron p {
+		font-size: 17px;
+	
+	}
+	.numberBox {
+		font-size: 50px;
+		margin: 0px;
+	}
+
+	#gameSection {
+		opacity: 0.70;
+	}
+
+	#scoreSection {
+		opacity: 0.70;
+	}
+
+	#buttonSection {
+		padding: 0px;
+		padding-top: 50px;
+		padding-bottom: 25px;
+		opacity: 0.70;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.jumbotron {
+		width: 100%;
+		margin-top: 85%;
+		opacity: 0.50;
+		border-radius: 0, 0, 0, 0;
+		border-left: 0%;
+		border-right: 0%;
+	}
+
+	h1 {
+		font-family: 'Helvetica';
+		font-size: 32px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+		
+	}
+	
+	h2 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+
+	h3 {
+		font-family: 'Helvetica';
+		font-size: 20px;
+		color: rgb(4, 5, 54);
+		text-align: center;
+	}
+	
+	p {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+		font-weight: bolder;
+		
+	}
+
+	li {
+		font-family: 'Helvetica';
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+	}
+	.jumbotron p {
+		font-size: 17px;
+	
+	}
+	.numberBox {
+		font-size: 50px;
+		margin: 0px;
+	}
+
+	#gameSection {
+		opacity: 0.70;
+	}
+
+	#scoreSection {
+		opacity: 0.70;
+	}
+
+	#buttonSection {
+		padding: 0px;
+		padding-top: 50px;
+		padding-bottom: 25px;
+		opacity: 0.70;
+	}
+
 }
