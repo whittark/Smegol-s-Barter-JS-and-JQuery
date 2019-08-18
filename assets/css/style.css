@@ -945,6 +945,109 @@ p {
 
 }
 
+@media screen and (max-width: 320px) {
+
+	body {
+		background-image: url("../images/smegol_small.png");
+		background-repeat: no-repeat;
+		background-color: black;
+		background-size: 100% 100%;
+	}
+	
+	.jumbotron {
+		width: 100%;
+		margin-top: 1.5%;
+		opacity: 0.50;
+		border-radius: 0, 0, 0, 0;
+		border-left: 0%;
+		border-right: 0%;
+	}
+
+	h1 {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 28px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+		
+	}
+	
+	h2 {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 20px;
+		color: rgb(13, 13, 14);
+		text-align: center;
+	}
+
+	h3 {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 20px;
+		color: rgb(13, 13, 14);
+		text-align: center;
+	}
+	
+	p {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+		font-weight: bolder;
+		margin-left: 3%;
+		margin-right: 3%;
+		
+	}
+
+	li {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	.jumbotron p {
+		font-size: 17px;
+	
+	}
+
+	#button-1, #button-2, #button-3, #button-4 {
+		width: 40px;
+		height: 40px;
+	}
+
+
+
+	.numberBox {
+		font-size: 50px;
+		margin: 0px;
+	}
+
+	#gameSection {
+		opacity: 0.70;
+	}
+
+	#scoreSection {
+		opacity: 0.70;
+	}
+
+	#buttonSection {
+		padding: 0px;
+		padding-top: 50px;
+		padding-bottom: 25px;
+		opacity: 0.70;
+	}
+
+	.icons {
+		display: inline-block;
+		  max-width: 100px;
+		  max-height: 100px;
+		  width: auto;
+		  height: auto;
+		  margin:10px;
+	}
+
+}
+
+
 @media screen and (max-width: 240px) {
 
 	body {
