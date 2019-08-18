@@ -760,7 +760,7 @@ p {
 @media screen and (max-width: 768px) {
 
 	body {
-		background-image: url("../images/smegol_small.png");
+		background-image: url("../images/smegol768.png");
 		background-repeat: no-repeat;
 		background-color: black;
 		background-size: 100% 100%;
