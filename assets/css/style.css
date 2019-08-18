@@ -6,15 +6,48 @@ body {
 	background-color: black;
 }
 
-.jumbotron {
+.titlebar {
+	margin-top: 35%;
+	background-color: rgb(43, 41, 41);
+    opacity: 0.7;
+	overflow: hidden;
+	height: 100px;
+	
+}
+
+.titlebar-text {
+	color: rgb(253, 252, 252);
+	font-family: 'Lexend Deca', sans-serif;
+	text-align: center;
+	letter-spacing: 10px;
+	font-weight: normal;
+	font-size: 20px;
+	margin-bottom: 1%;
+	margin-top: 3%;
+}
+
+.jumbotron, jumbotron-fluid {
 	width: 100%;
-	margin-top: 70%;
+	margin-top: 1.5%;
 	background: rgba (76, 175, 80, 0.1);
-	border-radius: 0, 0, 0, 0;
+	border-radius: 0px 0px 0px 0px;
 	border-left: 0%;
 	border-right: 0%;
-
+	padding-top: 0%;
 }
+
+.container {
+	width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+.container-fluid {
+	padding-left: 0%;
+	padding-right: 0%;
+	border-radius: 0px 0px;
+}
+
 
 .jumbotron p {
 	font-size: 17px;
@@ -42,18 +75,18 @@ body {
 
 /* Fonts */
 h1 {
-	font-family: 'Helvetica';
+	font-family: 'Lexend Deca', sans-serif;
 	font-size: 15px;
 	color: rgb(24, 23, 23);
 	
 }
 
 h2, h3 {
-	font-family: 'Helvetica';
+	font-family: 'Lexend Deca', sans-serif;
 }
 
 p {
-	font-family: 'Helvetica';
+	font-family: 'Lexend Deca', sans-serif;
 }
 
 .numberBox {
@@ -74,21 +107,32 @@ p {
 @media screen and (max-width: 1600px) {
 	.jumbotron {
 		width: 100%;
-		margin-top: 35%;
+		margin-top: 1.5%;
 		opacity: 0.30;
 		border-radius: 0, 0, 0, 0;
 		border-left: 0%;
 		border-right: 0%;
 	}
 	.jumbotron h1 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 38px;
 		color: rgb(13, 13, 14);
 		font-weight: bolder;
 	}
 
+	.titlebar-text {
+		color: rgb(253, 252, 252);
+		font-family: 'Lexend Deca', sans-serif;
+		text-align: center;
+		letter-spacing: 10px;
+		font-weight: normal;
+		font-size: 20px;
+		margin-bottom: 1%;
+		margin-top: 3%;
+	}
+
 	h1 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 22px;
 		color: rgb(13, 13, 14);
 		font-weight: bolder;
@@ -96,21 +140,21 @@ p {
 	}
 	
 	h2 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 
 	h3 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 	
 	p {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
@@ -119,7 +163,7 @@ p {
 	}
 
 	li {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
@@ -146,6 +190,15 @@ p {
 		padding-top: 50px;
 		padding-bottom: 25px;
 		opacity: 0.70;
+	}
+
+	.icons {
+		display: inline-block;
+		  max-width: 100px;
+		  max-height: 100px;
+		  width: auto;
+		  height: auto;
+		  margin:10px;
 	}
 
 }
@@ -153,21 +206,21 @@ p {
 @media screen and (max-width: 1500px) {
 	.jumbotron {
 		width: 100%;
-		margin-top: 35%;
+		margin-top: 1.5%;
 		opacity: 0.30;
 		border-radius: 0, 0, 0, 0;
 		border-left: 0%;
 		border-right: 0%;
 	}
 	.jumbotron h1 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 38px;
 		color: rgb(13, 13, 14);
 		font-weight: bolder;
 	}
 
 	h1 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 22px;
 		color: rgb(13, 13, 14);
 		font-weight: bolder;
@@ -175,21 +228,21 @@ p {
 	}
 	
 	h2 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 
 	h3 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 	
 	p {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
@@ -198,7 +251,7 @@ p {
 	}
 
 	li {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
@@ -225,6 +278,15 @@ p {
 		padding-top: 50px;
 		padding-bottom: 25px;
 		opacity: 0.70;
+	}
+
+	.icons {
+		display: inline-block;
+		  max-width: 100px;
+		  max-height: 100px;
+		  width: auto;
+		  height: auto;
+		  margin:10px;
 	}
 
 }
@@ -232,21 +294,21 @@ p {
 @media screen and (max-width: 1400px) {
 	.jumbotron {
 		width: 100%;
-		margin-top: 35%;
+		margin-top: 1.5%;
 		opacity: 0.30;
 		border-radius: 0, 0, 0, 0;
 		border-left: 0%;
 		border-right: 0%;
 	}
 	.jumbotron h1 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 38px;
 		color: rgb(13, 13, 14);
 		font-weight: bolder;
 	}
 
 	h1 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 22px;
 		color: rgb(13, 13, 14);
 		font-weight: bolder;
@@ -254,21 +316,21 @@ p {
 	}
 	
 	h2 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 
 	h3 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 	
 	p {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
@@ -277,7 +339,7 @@ p {
 	}
 
 	li {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
@@ -304,6 +366,15 @@ p {
 		padding-top: 50px;
 		padding-bottom: 25px;
 		opacity: 0.70;
+	}
+
+	.icons {
+		display: inline-block;
+		  max-width: 100px;
+		  max-height: 100px;
+		  width: auto;
+		  height: auto;
+		  margin:10px;
 	}
 
 }
@@ -312,21 +383,21 @@ p {
 @media screen and (max-width: 1200px) {
 	.jumbotron {
 		width: 100%;
-		margin-top: 45%;
+		margin-top: 1.5%;
 		opacity: 0.30;
 		border-radius: 0, 0, 0, 0;
 		border-left: 0%;
 		border-right: 0%;
 	}
 	.jumbotron h1 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 38px;
 		color: rgb(13, 13, 14);
 		font-weight: bolder;
 	}
 
 	h1 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 22px;
 		color: rgb(13, 13, 14);
 		font-weight: bolder;
@@ -334,21 +405,21 @@ p {
 	}
 	
 	h2 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 
 	h3 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 	
 	p {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
@@ -357,7 +428,7 @@ p {
 	}
 
 	li {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
@@ -384,6 +455,15 @@ p {
 		padding-top: 50px;
 		padding-bottom: 25px;
 		opacity: 0.70;
+	}
+
+	.icons {
+		display: inline-block;
+		  max-width: 100px;
+		  max-height: 100px;
+		  width: auto;
+		  height: auto;
+		  margin:10px;
 	}
 
 }
@@ -393,7 +473,7 @@ p {
 @media screen and (max-width: 980px) {
 	.jumbotron {
 		width: 100%;
-		margin-top: 55%;
+		margin-top: 1.5%;
 		opacity: 0.30;
 		border-radius: 0, 0, 0, 0;
 		border-left: 0%;
@@ -401,14 +481,14 @@ p {
 	}
 
 	.jumbotron h1 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 38px;
 		color: rgb(13, 13, 14);
 		font-weight: bolder;
 	}
 
 	h1 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 22px;
 		color: rgb(13, 13, 14);
 		font-weight: bolder;
@@ -416,21 +496,21 @@ p {
 	}
 	
 	h2 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 
 	h3 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 	
 	p {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
@@ -439,7 +519,7 @@ p {
 	}
 
 	li {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
@@ -468,13 +548,29 @@ p {
 		opacity: 0.70;
 	}
 
+	.icons {
+		display: inline-block;
+		  max-width: 100px;
+		  max-height: 100px;
+		  width: auto;
+		  height: auto;
+		  margin:10px;
+	}
+
 }
 
 @media screen and (max-width: 768px) {
 
+	body {
+		background-image: url("../images/smegol.PNG");
+		background-repeat: no-repeat;
+		background-color: black;
+		background-size: 100% 100%;
+	}
+	
 	.jumbotron {
 		width: 100%;
-		margin-top: 85%;
+		margin-top: 1.5%;
 		opacity: 0.50;
 		border-radius: 0, 0, 0, 0;
 		border-left: 0%;
@@ -482,41 +578,45 @@ p {
 	}
 
 	h1 {
-		font-family: 'Helvetica';
-		font-size: 32px;
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 28px;
 		color: rgb(13, 13, 14);
 		font-weight: bolder;
 		
 	}
 	
 	h2 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 
 	h3 {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 20px;
-		color: rgb(4, 5, 54);
+		color: rgb(13, 13, 14);
 		text-align: center;
 	}
 	
 	p {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
 		font-weight: bolder;
+		margin-left: 3%;
+		margin-right: 3%;
 		
 	}
 
 	li {
-		font-family: 'Helvetica';
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 17px;
 		color: rgb(10, 10, 10);
 		text-align: center;
+		margin-left: 3%;
+		margin-right: 3%;
 	}
 	.jumbotron p {
 		font-size: 17px;
@@ -540,6 +640,15 @@ p {
 		padding-top: 50px;
 		padding-bottom: 25px;
 		opacity: 0.70;
+	}
+
+	.icons {
+		display: inline-block;
+		  max-width: 100px;
+		  max-height: 100px;
+		  width: auto;
+		  height: auto;
+		  margin:10px;
 	}
 
 }
