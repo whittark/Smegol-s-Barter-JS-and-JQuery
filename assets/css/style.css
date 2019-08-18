@@ -104,6 +104,204 @@ p {
   	margin:10px;
 }
 
+@media screen and (max-width: 1800px) {
+	.jumbotron {
+		width: 100%;
+		margin-top: 1.5%;
+		opacity: 0.30;
+		border-radius: 0, 0, 0, 0;
+		border-left: 0%;
+		border-right: 0%;
+	}
+	.jumbotron h1 {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 38px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+	}
+
+	.titlebar-text {
+		color: rgb(253, 252, 252);
+		font-family: 'Lexend Deca', sans-serif;
+		text-align: center;
+		letter-spacing: 10px;
+		font-weight: normal;
+		font-size: 20px;
+		margin-bottom: 1%;
+		margin-top: 3%;
+	}
+
+	h1 {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 22px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+		
+	}
+	
+	h2 {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 20px;
+		color: rgb(13, 13, 14);
+		text-align: center;
+	}
+
+	h3 {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 20px;
+		color: rgb(13, 13, 14);
+		text-align: center;
+	}
+	
+	p {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+		font-weight: bolder;
+		
+	}
+
+	li {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+	}
+	.jumbotron p {
+		font-size: 17px;
+	
+	}
+	.numberBox {
+		font-size: 50px;
+		margin: 0px;
+	}
+
+	#gameSection {
+		opacity: 0.70;
+	}
+
+	#scoreSection {
+		opacity: 0.70;
+	}
+
+	#buttonSection {
+		padding: 0px;
+		padding-top: 50px;
+		padding-bottom: 25px;
+		opacity: 0.70;
+	}
+
+	.icons {
+		display: inline-block;
+		  max-width: 100px;
+		  max-height: 100px;
+		  width: auto;
+		  height: auto;
+		  margin:10px;
+	}
+
+}
+
+@media screen and (max-width: 1649px) {
+	.jumbotron {
+		width: 100%;
+		margin-top: 1.5%;
+		opacity: 0.30;
+		border-radius: 0, 0, 0, 0;
+		border-left: 0%;
+		border-right: 0%;
+	}
+	.jumbotron h1 {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 38px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+	}
+
+	.titlebar-text {
+		color: rgb(253, 252, 252);
+		font-family: 'Lexend Deca', sans-serif;
+		text-align: center;
+		letter-spacing: 10px;
+		font-weight: normal;
+		font-size: 20px;
+		margin-bottom: 1%;
+		margin-top: 3%;
+	}
+
+	h1 {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 22px;
+		color: rgb(13, 13, 14);
+		font-weight: bolder;
+		
+	}
+	
+	h2 {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 20px;
+		color: rgb(13, 13, 14);
+		text-align: center;
+	}
+
+	h3 {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 20px;
+		color: rgb(13, 13, 14);
+		text-align: center;
+	}
+	
+	p {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+		font-weight: bolder;
+		
+	}
+
+	li {
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 17px;
+		color: rgb(10, 10, 10);
+		text-align: center;
+	}
+	.jumbotron p {
+		font-size: 17px;
+	
+	}
+	.numberBox {
+		font-size: 50px;
+		margin: 0px;
+	}
+
+	#gameSection {
+		opacity: 0.70;
+	}
+
+	#scoreSection {
+		opacity: 0.70;
+	}
+
+	#buttonSection {
+		padding: 0px;
+		padding-top: 50px;
+		padding-bottom: 25px;
+		opacity: 0.70;
+	}
+
+	.icons {
+		display: inline-block;
+		  max-width: 100px;
+		  max-height: 100px;
+		  width: auto;
+		  height: auto;
+		  margin:10px;
+	}
+
+}
+
 @media screen and (max-width: 1600px) {
 	.jumbotron {
 		width: 100%;
